@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+:root {
+   --first--color: rgb(200, 142, 254);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: var(--first--color);
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+}
+
+.card {
+   padding: 10px;
+   margin-top: 20px;
+   width: 280px;
+   height: 510px;
+   background-color: #fff;
+   border-radius: 15px;
+   transition: 0.3s;
+}
+
+.box img {
+   width: 25px;
+}
+
+.product img {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   width: 80%;
+   transition: .3s;
+   cursor: -webkit-zoom-in;
+}
+
+.box {
+   display: flex;
+   justify-content: space-between;
+   margin: 15px 25px;
+}
+
+.box li {
+   list-style: none;
+}
+
+.desc {
+   margin-left: 10px;
+}
+
+.desc h1 {
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 10px;
+
+}
+
+.desc p {
+   font-size: 11px;
+   font-weight: lighter;
+   margin-bottom: 10px;
+   text-align: justify;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+   color: var(--first--color);
+}
+
+.price {
+   display: flex;
+   justify-content: center;
+   margin: 10px;
+}
+
+.price h3 {
+   font-size: 25px;
+   font-weight: 400;
+}
+
+.price sup {
+   color: green;
+}
+
+.btn button {
+   width: 100%;
+   height: 40px;
+   border-radius: 30px;
+   outline: none;
+   border: none;
+   background-color: var(--first--color);
+   color: white;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.card:hover {
+   transform: scale(1.01);
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn button:hover {
+   background-color: #fafafa;
+   color: var(--first--color);
+}
+
+.product img:hover {
+   transform: scale(1.5);
+}
